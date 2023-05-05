@@ -1,0 +1,57 @@
+.backgroundflash {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/resort.png) no-repeat center / cover fixed;
+}
+
+/* footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}--->*/
+
+.product {
+
+  width: 35%;
+  margin: 0px 0px 25px 25px;
+  border-radius: 25px;
+  padding: 25px 25px 25px 25px;
+  
+
+}
+
+.product>img {
+border-radius: 25px;
+margin: auto auto 25px auto;
+}
+
+.product>p {
+
+text-align: center;
+
+}
+
+.product>button {
+  margin: auto;
+
+}
+
+/*
+html,
+body,
+.section-images {
+  height: 100%;
+  margin: 0;
+}
+.section-images {
+  margin: auto 2em;
+  text-align: center;
+}
+img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 90%;
+  margin: 20px auto;
+}

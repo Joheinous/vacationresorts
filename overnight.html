@@ -12,11 +12,25 @@
     />
     <title>Document</title>
   </head>
-  <body>
-    <main class="container">
-      <form>
+  <body class="min-vh-100 justify-content-between">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid" style="margin: 1em 1em 1em 1em">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="overnight.html" class="nav-link active">Products</a>
+            </li>
+          </ul>
+  
+        </div>
+      </nav>
+    <main class="container" style="margin-top: 1em;">
+      <div class="form-group">
+        <form>
         <label for="name">Name:</label>
-        <input type="text" name="" id="name" placeholder="Name" required="" />
+        <input type="text" name="" id="name" placeholder="Name" required="" class="form-control"/>
 
         <label for="email">E-mail:</label>
         <input
@@ -25,22 +39,23 @@
           id="email"
           placeholder="E-Mail"
           required=""
+          class="form-control"
         />
 
         <label for="date">Check-in Date</label>
-        <input type="date" name="" id="checkIn" />
+        <input type="date" name="" id="checkIn" class="form-control" />
 
         <label for="nights">How many nights?</label>
-        <input type="number" id="nights" name="nights" min="1" max="28" />
+        <input type="number" id="nights" name="nights" min="1" max="28" class="form-control" />
 
         <label for="quantityA">How many adults?</label>
-        <input type="number" id="quantityA" name="quantityA" min="1" max="4" />
+        <input type="number" id="quantityA" name="quantityA" min="1" max="4" class="form-control"/>
 
         <label for="quantityC">How many children?</label>
-        <input type="number" id="quantityC" name="quantityC" min="0" max="4" />
+        <input type="number" id="quantityC" name="quantityC" min="0" max="4" class="form-control"/>
         
         <label for="type">Room Type:</label>
-<select id="type" name="type">
+<select id="type" name="type" class="form-control">
   <option value="king">King</option>
   <option value="queen">Queen</option>
   <option value="twobed">2 Bedroom Suite</option>
@@ -78,10 +93,11 @@
           <label class="form-check-label" for="military"> Military </label>
         </div>
 
-        <button type="button" onclick="calculateCost()">Get rate</button>
+        <button type="button" class="btn btn-primary" style="margin-top:1em;" onclick="calculateCost()">Get rate</button>
       </form>
+    </div>
 
-      <h2 id="output"></h2>
+      <h4 id="output"></h4>
 
     </main>
     <script src="scripts/scripts.js"></script>
